@@ -2,7 +2,6 @@
 //  ContentView.swift
 //  TastyMealTime
 //
-//  Created by Mark Nair on 11/26/23.
 //
 
 import SwiftUI
