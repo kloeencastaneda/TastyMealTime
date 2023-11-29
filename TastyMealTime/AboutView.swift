@@ -9,7 +9,32 @@ import SwiftUI
 
 struct AboutView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(showsIndicators: false) {
+            VStack(alignment: .leading) {
+                Text("About")
+                    .font(.largeTitle)
+                    .bold()
+                
+                Image(.bangkokTokyo)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.bottom)
+                
+                Text("Welcome to Bangkok Tokyo Restaurant where Thai and Japanese cruisines come together.")
+                
+                Image(.bangkokTokyoLocation)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                
+                Text("""
+                    2413 South Western Street
+                    Amarillo, Texas
+                    79109
+                    806-353-4777
+                    """)
+            }
+        }
+        .padding(.horizontal)
     }
 }
 

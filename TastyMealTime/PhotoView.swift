@@ -8,11 +8,34 @@
 import SwiftUI
 
 struct PhotoView: View {
+    @Binding var selectedPhoto: String
+    @Binding var isSheetVisible: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            HStack{
+                Spacer()
+                VStack {
+                    Button(action: {
+                        isSheetVisible = false
+                    }, label: {
+                        Image(systemName: "x.circle")
+                            .scaleEffect(2.0)
+                            .foregroundColor(.black)
+                            .opacity(0.8)
+                    })
+                    Spacer()
+                }
+            }
+            .padding()
+            
+            Image(selectedPhoto)
+                .resizable()
+            .aspectRatio(contentMode: .fit)
+        }
     }
 }
 
 #Preview {
-    PhotoView()
+    PhotoView(selectedPhoto: Binding.constant("gallery1"), isSheetVisible: Binding.constant(true))
 }

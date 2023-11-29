@@ -10,7 +10,7 @@ import SwiftUI
 struct TastyMealTimeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
