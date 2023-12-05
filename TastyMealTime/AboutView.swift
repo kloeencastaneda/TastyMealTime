@@ -15,24 +15,31 @@ struct AboutView: View {
                     .font(.largeTitle)
                     .bold()
                 
-                Image(.bangkokTokyo)
+                Image(.muslceHouseLogo)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .padding(.bottom)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                    .padding(.vertical)
                 
-                Text("Welcome to Bangkok Tokyo Restaurant where Thai and Japanese cruisines come together.")
-                
-                Image(.bangkokTokyoLocation)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                
-                Text("""
-                    2413 South Western Street
-                    Amarillo, Texas
-                    79109
-                    806-353-4777
-                    """)
+                Text("We're here, and we're only going to get bigger and better.")
+                    .multilineTextAlignment(.center)
+                    .bold()
             }
+            Spacer()
+            Text("Elite members get 24/7 access!")
+                .multilineTextAlignment(.center)
+                .bold()
+            
+            Spacer()
+            
+            Text("Sign up online:")
+                .multilineTextAlignment(.center)
+                .bold()
+            Image(.qrCode)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .padding(.vertical)
         }
         .padding(.horizontal)
     }

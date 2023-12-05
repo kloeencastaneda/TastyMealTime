@@ -1,31 +1,32 @@
 //
-//  MenuView.swift
-//  TastyMealTime
+//  EquipmentView.swift
 //
-//  Created by Mark Nair on 11/27/23.
+//
+//  Created by Kloee Pratt-Castaneda 11/02/2023
 //
 
 import SwiftUI
 
 struct MenuView: View {
     
-    @State private var menuItems = [MuscleItem] ()
+    @State private var muscleItems = [MuscleItem] ()
     var dataService = DataService()
     
 var body: some View {
         
-    List(menuItems) {item in
+    List(muscleItems) {item in
         
         MenuListRow(item: item)
     }
-
+    .scaledToFit()
+    .clipped()
         .listStyle(.plain)
         .onAppear {
-            menuItems = dataService.getMuscleData()
+            muscleItems = dataService.getMuscleData()
         }
     }
 }
 
 #Preview {
-    EquipmentView()
+    MenuView()
 }

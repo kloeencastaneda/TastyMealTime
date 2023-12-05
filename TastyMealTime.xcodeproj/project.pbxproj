@@ -18,6 +18,7 @@
 		4DE98F5B2B150545008B8608 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE98F5A2B150545008B8608 /* MenuView.swift */; };
 		4DE98F5D2B1509F4008B8608 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE98F5C2B1509F4008B8608 /* DataService.swift */; };
 		4DE98F5F2B1541A2008B8608 /* Grids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE98F5E2B1541A2008B8608 /* Grids.swift */; };
+		90B812DE2B1E54BA0022E338 /* MenuListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B812DD2B1E54BA0022E338 /* MenuListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4DE98F5A2B150545008B8608 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		4DE98F5C2B1509F4008B8608 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4DE98F5E2B1541A2008B8608 /* Grids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grids.swift; sourceTree = "<group>"; };
+		90B812DD2B1E54BA0022E338 /* MenuListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				4DE98F472B14474E008B8608 /* MainView.swift */,
 				4DE98F5E2B1541A2008B8608 /* Grids.swift */,
 				4DE98F562B150489008B8608 /* AboutView.swift */,
+				90B812DD2B1E54BA0022E338 /* MenuListRow.swift */,
 				4DE98F582B1504A0008B8608 /* GalleryView.swift */,
 				4D08CF562B17B1B600FD2DB5 /* PhotoView.swift */,
 				4DE98F5A2B150545008B8608 /* MenuView.swift */,
@@ -163,6 +166,7 @@
 				4DE98F5B2B150545008B8608 /* MenuView.swift in Sources */,
 				4DE98F482B14474E008B8608 /* MainView.swift in Sources */,
 				4DE98F572B150489008B8608 /* AboutView.swift in Sources */,
+				90B812DE2B1E54BA0022E338 /* MenuListRow.swift in Sources */,
 				4D08CF572B17B1B600FD2DB5 /* PhotoView.swift in Sources */,
 				4D08CF552B17A9C300FD2DB5 /* MenuItemModel.swift in Sources */,
 				4DE98F5D2B1509F4008B8608 /* DataService.swift in Sources */,

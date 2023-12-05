@@ -7,9 +7,8 @@
 
 import Foundation
 
-struct MenuItem: Identifiable {
+struct MuscleItem: Identifiable {
     var id = UUID()
     var name: String
-    var price: String
     var imageName: String
 }

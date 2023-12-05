@@ -16,19 +16,18 @@ struct GalleryView: View {
     
     var body: some View {
         VStack {
-            Text("GALLERY")
+            Text("Gallery")
                 .font(.largeTitle)
                 .bold()
             
             GeometryReader { proxy in
                 ScrollView(showsIndicators: false) {
-                    LazyVGrid(columns: [GridItem(spacing: 10), GridItem(spacing: 10), GridItem(spacing: 10)]) {
+                    LazyVGrid(columns: [GridItem(spacing: 20), GridItem(spacing: 20), GridItem(spacing: 20)]) {
                         ForEach(photoData, id: \.self) { photo in
                             Image(photo)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(maxWidth: (proxy.size.width - 20) / 3)
-                                .clipped()
+                               .resizable()
+                               .aspectRatio(contentMode: .fit)
+                               .clipped()
                                 .onTapGesture {
                                     sheetVisible = true
                                     selectedPhoto = photo

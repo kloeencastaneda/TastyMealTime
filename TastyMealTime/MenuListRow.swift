@@ -8,11 +8,33 @@
 import SwiftUI
 
 struct MenuListRow: View {
+    
+    var item: MuscleItem
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            Image(item.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 50)
+                .cornerRadius(10)
+            
+            Text(item.name)
+                .bold()
+            
+            Spacer()
+            
+        }
+        .listRowSeparator(.hidden)
+        .listRowBackground(
+            Color(.brown)
+                .opacity(0.1)
+        )
     }
 }
 
+
 #Preview {
-    MenuListRow()
+    MenuListRow(item: MuscleItem(name: "",  imageName: "muscle-house-1"))
 }
